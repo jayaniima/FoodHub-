@@ -18,7 +18,6 @@ df.head()
 
 # -------------------------
 
-# Write your code here
 df.shape # Checking the shape of data
 
 # -------------------------
@@ -36,12 +35,12 @@ df.info()
 
 # -------------------------
 
-# Write your code here
+
 df.isnull().sum() # Checking the count of missing values in all the columns
 
 # -------------------------
 
-# Write your code here
+
 df.describe().T # Transpose of statistical summary of all numerical variables
 
 # -------------------------
@@ -50,12 +49,12 @@ df.describe(include='all').T # Transpose of statistical summary of all the varia
 
 # -------------------------
 
-# Write the code here
+
 df['rating'].value_counts() # counting the unique values in the column 'rating'
 
 # -------------------------
 
-# Write the code here
+
 # Column 1: order_id: Unique ID of the order (non numeric)
 df['order_id'].nunique()
 
@@ -174,12 +173,12 @@ plt.xlabel('Delivery Time');
 
 # -------------------------
 
-# Write the code here
+
 df['restaurant_name'].value_counts()
 
 # -------------------------
 
-# Write the code here
+
 pd.crosstab(df['cuisine_type'],df['day_of_the_week']) #Method 1
 
 
@@ -190,7 +189,7 @@ df_weekend['cuisine_type'].value_counts()
 
 # -------------------------
 
-# Write the code here
+
 sub_set = df[df['cost_of_the_order']>20] # data set having order cost greater than $20
 total_set = df.shape[0] # df.shape[0] returns number of rows in df
 
@@ -198,14 +197,14 @@ print('Percentage of the orders cost more than $20 = ',round((sub_set.shape[0]/t
 
 # -------------------------
 
-# Write the code here
+
 mean_order_delivery_time = df['delivery_time'].mean()
 
 print('Mean order delivery time in minutes = ',round(mean_order_delivery_time,2))
 
 # -------------------------
 
-# Write the code here
+
 top_three = df['customer_id'].value_counts() # getting number of occurences of each customer id
 top_three[0:3] # retreiving only first three rows
 
@@ -278,7 +277,7 @@ sns.heatmap(data = df[['cost_of_the_order', 'food_preparation_time', 'delivery_t
 # -------------------------
 
 
-# Write the code here
+
 rating_set = df[df['rating']!= 'Not given'].copy() # creating a subset of data without rating = 'Not given'
 rating_set['rating']= rating_set['rating'].astype('int') # converting the data type of rating column to integer for future arithmatic operations
 
@@ -294,7 +293,7 @@ new_df4 # view result
 
 # -------------------------
 
-# Write the code here
+
 net_revenue = 0
 for each in df['cost_of_the_order']:
 
@@ -311,7 +310,7 @@ print("Net Revenue = ", round(net_revenue,2), 'dollars')
 
 # -------------------------
 
-# Write the code here
+
 df['total_time'] = df['food_preparation_time'] + df['delivery_time'] # calculating the total time and add that as a new column to the data set
 
 total_greater_than_60 = df[df['total_time']>60].shape[0] # number of rows in the dataset having total time greater than 60 minutes
@@ -321,5 +320,5 @@ print('Percentage of orders take more than 60 minutes = ',round((total_greater_t
 
 # -------------------------
 
-# Write the code here
+
 df.groupby('day_of_the_week')['delivery_time'].mean()
