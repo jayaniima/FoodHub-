@@ -39,8 +39,3 @@ foodhub-customer-behavior-analysis/
 │   └── foodhub_order.csv
 |   └── foodhub_order.xlsx
 
-
-
-
-## Author
-Jayani Imalka
