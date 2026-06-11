@@ -27,5 +27,20 @@ FoodHub wants to improve customer satisfaction and operational performance by un
 - Preparation and delivery performance
 - Business recommendations
 
+## Repository Structure
+```text
+foodhub-customer-behavior-analysis/
+│
+├── README.md
+├── requirements.txt
+├── FoodHub_Data_Analysis.ipynb
+│
+├── data/
+│   └── foodhub_order.csv
+|   └── foodhub_order.xlsx
+
+
+
+
 ## Author
 Jayani Imalka
