@@ -12,7 +12,7 @@ import seaborn as sns
 # -------------------------
 
 # read the data (Importing data)
-df = pd.read_csv('/content/drive/MyDrive/Data Science/Colab Notebooks/Assignment_1_FoodHub/foodhub_order.csv')
+df = pd.read_csv('/data/foodhub_order.csv')
 # returns the first 5 rows
 df.head()
 
