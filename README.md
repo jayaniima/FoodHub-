@@ -38,5 +38,10 @@ foodhub-customer-behavior-analysis/
 │
 ├── data/
 │   └── foodhub_order.csv
-|   └── foodhub_order.xlsx
+|  └── foodhub_order.xlsx
+```
+## Author
 
+**Jayani Imalka**
+
+Data Analytics | Business Intelligence | Applied Data Science
