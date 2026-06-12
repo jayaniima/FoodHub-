@@ -2,6 +2,7 @@
 
 ## Overview
 This project analyzes FoodHub order data to understand customer behavior, restaurant performance, order patterns, ratings, and delivery efficiency.
+> Completed as part of the MIT Applied Data Science Program (ADSP), applying deep learning and computer vision techniques to solve a real-world image classification problem.
 
 ## Business Problem
 FoodHub wants to improve customer satisfaction and operational performance by understanding ordering trends, customer preferences, restaurant demand, and delivery metrics.
